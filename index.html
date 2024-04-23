@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tarun's Garage</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+        .container { width: 80%; margin: auto; overflow: hidden; }
+        header { background: #333; color: #fff; padding-top: 30px; min-height: 70px; border-bottom: #0779e4 3px solid; }
+        header h1 { text-align: center; }
+        nav { background: #444; color: #ffffff; text-align: center; padding: 5px; }
+        nav a { color: #ffffff; text-decoration: none; padding: 5px 20px; }
+        nav a:hover { background: #0779e4; }
+        article { padding: 20px; }
+        .car-model { margin-bottom: 20px; padding: 10px; background: #fff; border-left: #0779e4 4px solid; }
+        .car-model h2, .car-model label { color: #333; }
+        .car-model p { color: #666; }
+        footer { background: #333; color: #fff; text-align: center; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Tarun's Garage</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Contact Us</a>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="main-section">
+            <h2>Famous 2024 Car Models</h2>
+            <article class="car-model">
+                <h2>Model X</h2>
+                <p>Price: $80,000</p>
+                <label>Want to rent or buy?
+                    <input type="radio" id="rentX" name="optionX" value="rent"> Rent
+                    <input type="radio" id="saleX" name="optionX" value="sale"> For Sale
+                </label>
+            </article>
+            <article class="car-model">
+                <h2>Model Y</h2>
+                <p>Price: $60,000</p>
+                <label>Want to rent or buy?
+                    <input type="radio" id="rentY" name="optionY" value="rent"> Rent
+                    <input type="radio" id="saleY" name="optionY" value="sale"> For Sale
+                </label>
+            </article>
+            <!-- Add more car models here -->
+        </section>
+        <aside class="sidebar">
+            <h3>Request a Car Model or Query</h3>
+            <form>
+                <label for="carModel">Car Model</label>
+                <input type="text" id="carModel" placeholder="Car Model" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+                
+                <label for="query">Your Query</label>
+                <textarea id="query" placeholder="Your Query"></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </aside>
+    </div>
+    <footer>
+        <p>Contact us at email@example.com or +1234567890, or visit us at 123 Street, City</p>
+        <p>&copy; 2023 Tarun's Garage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
